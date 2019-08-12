@@ -14,7 +14,7 @@ namespace QuizApp.Model
       public  List<Question> question = new List<Question>()
         {
             new Question { QuestionText = "'The Hurt Locker' won the Academy Award for Best picture in 2009", CorrectAnswer = true},
-            new Question { QuestionText = "Gone with the wind was the first movie to win the Oscar for Best picture", CorrectAnswer = false},
+            new Question { QuestionText = "Came with the wind was the first movie to win the Oscar for Best picture", CorrectAnswer = false},
             new Question { QuestionText = "LA filmed in Vancouver", CorrectAnswer = false},
             new Question { QuestionText = "Batman made his first movie apperance in the 1940s", CorrectAnswer = true},
             new Question { QuestionText = "Tom Hanks speaks less than 200 words in Toy Story 2 ", CorrectAnswer = false},
