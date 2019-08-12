@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{E7CF7519-AF69-4F0D-8F22-F7D3109C4459}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="QuizApp/Model/QuestionBank.cs">
+    <Files>
+      <File FileName="QuizApp/Model/QuestionBank.cs" Line="23" Column="63" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="QuizApp" expanded="True">
+            <Node name="QuizApp" expanded="True">
+              <Node name="Model" expanded="True">
+                <Node name="QuestionBank.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.QuizApp.Android PreferredExecutionTarget="Android.Pixel_3_XL_Edited_API_23" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
