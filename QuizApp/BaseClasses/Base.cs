@@ -17,6 +17,7 @@ namespace QuizApp
         {
             if (this.GetType() == typeof(SportsPage))
                 BindingContext = new SportsVM();
+                //i did this 
             else if (this.GetType() == typeof(PoliticsPage))
                 BindingContext = new PoliticsVM();
         }
