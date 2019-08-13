@@ -24,7 +24,7 @@
                        FontFamily="Georgia"
                        HorizontalOptions="Center"
                        VerticalOptions="CenterAndExpand"/>
-                
+
             </StackLayout>
             <StackLayout Grid.Row="1" Padding="80">
                 <Button Text="TRUE"

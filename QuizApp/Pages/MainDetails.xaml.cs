@@ -22,7 +22,7 @@ namespace QuizApp
         void Politics_Handle_Clicked(object sender, System.EventArgs e)
         {
             var Ppage = Application.Current as App;
-            Ppage.toPolitics();
+           Ppage.toPolitics();
         }
 
         public MainDetails()
