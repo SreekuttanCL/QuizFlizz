@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using System.Diagnostics;
+using QuizApp.ViewModels;
 
 namespace QuizApp
 {
@@ -19,6 +20,10 @@ namespace QuizApp
                 BindingContext = new SportsVM();
             else if (this.GetType() == typeof(PoliticsPage))
                 BindingContext = new PoliticsVM();
+            else if (this.GetType() == typeof(MainPage))
+                BindingContext = new LoginPageVM();
+            else if (this.GetType() == typeof(SignUp))
+                BindingContext = new SignUpVM();
         }
     }
 }
