@@ -49,7 +49,8 @@
             <StackLayout Grid.Row="2">
                 <ProgressBar
                              Margin="10,20" 
-                             IsVisible="true" 
+                             IsVisible="true"
+                             ScaleY="3"
                              ProgressColor="Lime"
                              Progress="{Binding StartUpProgress}"
                             />

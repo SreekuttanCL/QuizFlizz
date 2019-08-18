@@ -10,7 +10,7 @@ namespace QuizApp
         void Movies_Handle_Clicked(object sender, System.EventArgs e)
         {
             var Mpage = Application.Current as App;
-            Mpage.toMovies();
+            Mpage.toSports();
         }
 
         void Sports_Handle_Clicked(object sender, System.EventArgs e)

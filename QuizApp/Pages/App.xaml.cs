@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -6,11 +7,12 @@ namespace QuizApp
 {
     public partial class App : Application
     {
+
         public App()
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+        MainPage = new NavigationPage(new MainPage());
         }
 
         public void onEnter()
@@ -32,6 +34,7 @@ namespace QuizApp
         public void toSports()
         {
             MainPage = new SportsPage();
+            
         }
         public void toPolitics()
         {

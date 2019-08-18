@@ -1,32 +1,24 @@
 ﻿using System;
-using System.Threading.Tasks;
 using System.Windows.Input;
-using QuizApp.Model;
 using Xamarin.Forms;
-using System.Diagnostics;
-
+using QuizApp.Model;
 
 namespace QuizApp
 {
-    public class SportsVM: BaseVM
+    public class MoviesVM: BaseVM
     {
         public string trueTitle { get; set; }
         public string falseTitle { get; set; }
 
-       
-
-        public SportsVM()
+        public MoviesVM()
         {
-
-            //   Debug.Write("........sportsvm constructor:"+ myApp.globalCategory);
             myApp = Application.Current as App;
 
             trueTitle = "TRUE";
             falseTitle = "False";
             allQuestion = new QuestionBank();
-            QuestionLabel = allQuestion.SportsQuestion[questionNumber].QuestionText;
+            QuestionLabel = allQuestion.MoviesQuestion[questionNumber].QuestionText;
             CurrentScore = "Score: 0 / 10";
-       
         }
 
         public ICommand TrueCommand => new Command(TrueClicked);
@@ -36,19 +28,18 @@ namespace QuizApp
         async public void TrueClicked()
         {
             Console.WriteLine("true btn clicked");
-            SportstoBaseTrue(true,"sports");
+            SportstoBaseTrue(true, "movies");
             OnPropertyChanged();
         }
 
         async public void FalseClicked()
         {
-            SportstoBaseTrue(false,"sports");
+            SportstoBaseTrue(false, "movies");
         }
 
         public void BackClicked()
         {
             myApp.Back();
         }
-
     }
 }

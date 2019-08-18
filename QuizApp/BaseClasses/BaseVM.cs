@@ -16,15 +16,16 @@ namespace QuizApp
        public QuestionBank allQuestion = new QuestionBank();
         bool pickedAnswer, correctAnswer;
         public int questionNumber = 0;
+        public string whichCategory;
         int score = 0;
         Double perQuestionProgress = .1;
-        public App myApp = Application.Current as App;
+        public App myApp { get; set; }
         public event PropertyChangedEventHandler PropertyChanged;
-
         public BaseVM()
         {
+
         }
-       
+
         public string currentScore;
         public string CurrentScore
         {
@@ -88,14 +89,27 @@ namespace QuizApp
 
 
 
-        async public void SportstoBaseTrue(bool _true)
+        async public void SportstoBaseTrue(bool _true, string _category)
         {
+            whichCategory = _category;
             pickedAnswer = _true;
             checkAnswer();
         }
          async public void checkAnswer()
         {
-            correctAnswer = allQuestion.question[questionNumber].CorrectAnswer;
+            if (whichCategory == "politics")
+            {
+                correctAnswer = allQuestion.PoliticsQuestion[questionNumber].CorrectAnswer;
+            }
+            else if(whichCategory == "sports")
+            {
+                correctAnswer = allQuestion.SportsQuestion[questionNumber].CorrectAnswer;
+            }
+            else if (whichCategory == "movies")
+            {
+                correctAnswer = allQuestion.MoviesQuestion[questionNumber].CorrectAnswer;
+            }
+            
             Debug.Write("ITs clicking " + pickedAnswer);
             if (pickedAnswer == correctAnswer)
             {
@@ -116,7 +130,19 @@ namespace QuizApp
         {
             if (questionNumber < 10)
             {
-                QuestionLabel = allQuestion.question[questionNumber].QuestionText;
+                if (whichCategory == "politics")
+                {
+                    QuestionLabel = allQuestion.PoliticsQuestion[questionNumber].QuestionText;
+                }
+                else if (whichCategory == "sports")
+                {
+                    QuestionLabel = allQuestion.SportsQuestion[questionNumber].QuestionText;
+                }
+                else
+                {
+                    QuestionLabel = allQuestion.MoviesQuestion[questionNumber].QuestionText;
+                }
+
             }
             else
             {
@@ -133,6 +159,7 @@ namespace QuizApp
             {
                 //send user to the category screen
                 var myApp = Application.Current as App;
+
                 myApp.Category();
             }
             else

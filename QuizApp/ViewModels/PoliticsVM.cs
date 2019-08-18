@@ -5,18 +5,20 @@ using Xamarin.Forms;
 
 namespace QuizApp
 {
-    public class PoliticsVM: Base
+    public class PoliticsVM: BaseVM
     {
-        QuestionBank allQuestion;
-        bool pickedAnswer, correctAnswer;
-        int questionNumber = 0;
-        int score = 0;
-        Double perQuestionProgress = .1;
+        public string trueTitle { get; set; }
+        public string falseTitle { get; set; }
 
         public PoliticsVM()
         {
+            myApp = Application.Current as App;
+
+            trueTitle = "TRUE";
+            falseTitle = "False";
             allQuestion = new QuestionBank();
-           // questionLabel.Text = allQuestion.question[questionNumber].QuestionText;
+            QuestionLabel = allQuestion.PoliticsQuestion[questionNumber].QuestionText;
+            CurrentScore = "Score: 0 / 10";
         }
 
         public ICommand TrueCommand => new Command(TrueClicked);
@@ -25,14 +27,13 @@ namespace QuizApp
 
         async public void TrueClicked()
         {
-            pickedAnswer = true;
-            checkAnswer();
+            SportstoBaseTrue(true,"politics");
+            OnPropertyChanged();
         }
 
         async public void FalseClicked()
         {
-            pickedAnswer = false;
-            checkAnswer();
+            SportstoBaseTrue(false,"politics");
         }
 
         async public void BackClicked()
@@ -40,53 +41,6 @@ namespace QuizApp
             myApp.Back();
         }
 
-        public void checkAnswer()
-        {
-            correctAnswer = allQuestion.question[questionNumber].CorrectAnswer;
-
-            if (pickedAnswer == correctAnswer)
-            {
-                score++;
-            }
-
-           // PoliticsBar.ProgressTo(perQuestionProgress, 250, Easing.Linear);
-            perQuestionProgress = perQuestionProgress + .1;
-            //currentScore.Text = "Score: " + score + "/10";
-
-            questionNumber++;
-            nextQuestion();
-        }
-
-        public void nextQuestion()
-        {
-            if (questionNumber < 10)
-            {
-                //questionLabel.Text = allQuestion.question[questionNumber].QuestionText;
-
-            }
-            else
-            {
-                OnAlertYesNoClicked(null, null);
-                // currentScore.Text = "";
-            }
-        }
-
-        async void OnAlertYesNoClicked(object sender, EventArgs e)
-        {
-            //bool answer = await DisplayAlert("Results", "Your Final Score is " + score + "/10", "Continue", "Try Again");
-
-            //if (answer)
-            //{
-            //    //send user to the category screen
-            //    var myApp = Application.Current as App;
-            //    myApp.Category();
-            //}
-            //else
-            //{
-            //    //restart the activity
-            //    var myApp = Application.Current as App;
-            //    myApp.toMovies();
-            //}
-        }
+        
     }
 }
