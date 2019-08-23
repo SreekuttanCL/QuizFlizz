@@ -10,13 +10,13 @@ namespace QuizApp
         void Movies_Handle_Clicked(object sender, System.EventArgs e)
         {
             var Mpage = Application.Current as App;
-            Mpage.toSports();
+            Mpage.toMovies();
         }
 
         void Sports_Handle_Clicked(object sender, System.EventArgs e)
         {
             var Spage = Application.Current as App;
-            Spage.toSports();
+            Spage.toSports("sports");
         }
 
         void Politics_Handle_Clicked(object sender, System.EventArgs e)

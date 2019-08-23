@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using QuizApp.Model;
 using Xamarin.Forms;
 using System.Reflection;
+using QuizApp.ENUMS;
 
 namespace QuizApp
 {
@@ -16,14 +17,24 @@ namespace QuizApp
        public QuestionBank allQuestion = new QuestionBank();
         bool pickedAnswer, correctAnswer;
         public int questionNumber = 0;
-        public string whichCategory;
         int score = 0;
         Double perQuestionProgress = .1;
-        public App myApp { get; set; }
+        public App myApp = Application.Current as App;
+        protected App MainApp = Application.Current as App;
+        public string nameOftheCategory { get; set; }
+
+
+
         public event PropertyChangedEventHandler PropertyChanged;
+
         public BaseVM()
         {
+        }
 
+        private async void TestAsync()
+        {
+            await Task.Delay(10000);
+            Debug.WriteLine("got response from server");
         }
 
         public string currentScore;
@@ -89,28 +100,14 @@ namespace QuizApp
 
 
 
-        async public void SportstoBaseTrue(bool _true, string _category)
-        {
-            whichCategory = _category;
+        async public void SportstoBaseTrue(bool _true)
+        { 
             pickedAnswer = _true;
             checkAnswer();
         }
          async public void checkAnswer()
         {
-            if (whichCategory == "politics")
-            {
-                correctAnswer = allQuestion.PoliticsQuestion[questionNumber].CorrectAnswer;
-            }
-            else if(whichCategory == "sports")
-            {
-                correctAnswer = allQuestion.SportsQuestion[questionNumber].CorrectAnswer;
-            }
-            else if (whichCategory == "movies")
-            {
-                correctAnswer = allQuestion.MoviesQuestion[questionNumber].CorrectAnswer;
-            }
-            
-            Debug.Write("ITs clicking " + pickedAnswer);
+            correctAnswer = allQuestion.question[questionNumber].CorrectAnswer;
             if (pickedAnswer == correctAnswer)
             {
                 score++;
@@ -130,19 +127,7 @@ namespace QuizApp
         {
             if (questionNumber < 10)
             {
-                if (whichCategory == "politics")
-                {
-                    QuestionLabel = allQuestion.PoliticsQuestion[questionNumber].QuestionText;
-                }
-                else if (whichCategory == "sports")
-                {
-                    QuestionLabel = allQuestion.SportsQuestion[questionNumber].QuestionText;
-                }
-                else
-                {
-                    QuestionLabel = allQuestion.MoviesQuestion[questionNumber].QuestionText;
-                }
-
+                QuestionLabel = allQuestion.question[questionNumber].QuestionText;
             }
             else
             {
@@ -159,16 +144,52 @@ namespace QuizApp
             {
                 //send user to the category screen
                 var myApp = Application.Current as App;
-
                 myApp.Category();
             }
             else
             {
                 //restart the activity
                 var myApp = Application.Current as App;
-                myApp.toSports();
+                myApp.toSports("sports");
             }
         }
+
+
+        async public void ContinueSignIn(string _username, string _password)
+        {
+            Debug.WriteLine($"check against username:{_username}, password:{_password}");
+            var _user = new UserAuthInfoObject
+            {
+                Email = _username,
+                Password = _password,
+                AuthType = AuthType.SignIn,
+            };
+            ServerConnect serviceConnect = new ServerConnect();
+
+
+            var result = await serviceConnect.Connect(_user);
+            
+            switch (result)
+            {
+                case ServerReplyStatus.Success:
+                    MainApp.OnLogin();
+                    break;
+                case ServerReplyStatus.NotConfirmed:
+                    await MainApp.MainPage.DisplayAlert("Error!", "Email not confirmed, \nPlease check your email to confirm your account", "Ok");
+                    break;
+                case ServerReplyStatus.InvalidPassword:
+                    await MainApp.MainPage.DisplayAlert("Error!", "Invalid password!", "Ok");
+                    break;
+                case ServerReplyStatus.UserNotFound:
+                    await MainApp.MainPage.DisplayAlert("Error!", "Username not found!", "Ok");
+                    break;
+                default:
+                    await MainApp.MainPage.DisplayAlert("Error!", "Something went wrong", "Ok");
+                    break;
+            }
+
+        }
+
 
 
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+<local:Base xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:local="clr-namespace:QuizApp" x:Class="QuizApp.MainPage">
     <Grid BackgroundColor="white" >
@@ -19,13 +19,15 @@
         </StackLayout>
         <StackLayout Grid.Row="1">
             <StackLayout Padding="20" >
-                <Entry Placeholder="Username"
+                <Entry Placeholder="Email"
                        x:Name="username"
                        HeightRequest="50"
+                       Text="{Binding Username, Mode=TwoWay }"
                        HorizontalOptions="FillAndExpand"
                        VerticalOptions="StartAndExpand"/>
                 <Entry Placeholder="Password"
                        x:Name="password"
+                       Text="{Binding Password, Mode=TwoWay }"
                        HeightRequest="50"
                        HorizontalOptions="FillAndExpand"
                        VerticalOptions="EndAndExpand"
@@ -49,7 +51,7 @@
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="End"
                         BackgroundColor="#FFEB3B"
-                        Clicked="Enter_Handle_Clicked"
+                        Command="{Binding SigninCommand}"
                         CornerRadius="25"/>
                 <Label Text="Or"
                        FontAttributes="Bold"
@@ -60,15 +62,15 @@
                 <Button Text="Create Account" 
                         TextColor="Black" 
                         HeightRequest="50" 
-                        Padding="10" 
+                        Padding="10"
                         FontSize="Large" 
                         FontFamily="badoni"
                         FontAttributes="Bold"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="StartAndExpand"
                         BackgroundColor="#FFEB3B"
-                        Clicked="Signup_Clicked"
+                        Command="{Binding CreateAccount}"
                         CornerRadius="25"/>
         </StackLayout>
     </Grid>
-</ContentPage>
+</local:Base>

@@ -8,14 +8,19 @@ using Xamarin.Forms;
 namespace QuizApp
 {
     public partial class SportsPage : Base
-
     {
         public SportsPage()
         {
-       //  Debug.Write("...... 1 from sports page:"+ myApp.globalCategory );
+            
             InitializeComponent();
         }
 
+        public SportsPage(String categoryName)
+        {
+            whichCategory = categoryName;
+            Debug.WriteLine("from sports 2 " + categoryName + "");
 
+
+        }
     }
 }
