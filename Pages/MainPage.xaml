@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<local:Base xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:QuizApp" x:Class="QuizApp.MainPage">
+    <Grid BackgroundColor="white" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.4*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.9*"/>
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Row="0">
+            <Label Text="QuizFlizz"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   FontSize="60"
+                   FontFamily="Georgia"
+                   FontAttributes="Italic"
+                   TextColor="black"/>
+        </StackLayout>
+        <StackLayout Grid.Row="1">
+            <StackLayout Padding="20" >
+                <Entry Placeholder="Email"
+                       x:Name="username"
+                       HeightRequest="50"
+                       Text="{Binding Username, Mode=TwoWay }"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="StartAndExpand"/>
+                <Entry Placeholder="Password"
+                       x:Name="password"
+                       Text="{Binding Password, Mode=TwoWay }"
+                       HeightRequest="50"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="EndAndExpand"
+                       Keyboard="Email"
+                       IsPassword="True"/>
+                <Label x:Name="Error"
+                       TextColor="Red"
+                       FontSize="15"/>
+                
+                
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Grid.Row="2" Padding="20">
+                <Button Text="Sign In" 
+                        TextColor="Black" 
+                        HeightRequest="50" 
+                        Padding="10" 
+                        FontSize="Large" 
+                        FontFamily="badoni"
+                        FontAttributes="Bold"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="End"
+                        BackgroundColor="#FFEB3B"
+                        Command="{Binding SigninCommand}"
+                        CornerRadius="25"
+                        />
+                <Label Text="Or"
+                       FontAttributes="Bold"
+                       FontSize="Large"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"/>
+                
+                <Button Text="Create Account" 
+                        TextColor="Black" 
+                        HeightRequest="50" 
+                        Padding="10"
+                        FontSize="Large" 
+                        FontFamily="badoni"
+                        FontAttributes="Bold"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="StartAndExpand"
+                        BackgroundColor="#FFEB3B"
+                        Command="{Binding CreateAccount}"
+                        CornerRadius="25"/>
+                            <ActivityIndicator  IsRunning="{Binding IsBusy}" Margin="20" />
+
+        </StackLayout>
+    </Grid>
+</local:Base>
