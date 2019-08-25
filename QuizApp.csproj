@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceAssemblyReference>true</ProduceAssemblyReference>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.6.0.264807" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.0.1" />
+    <PackageReference Include="AWSSDK.CognitoIdentityProvider" Version="3.3.102.50" />
+    <PackageReference Include="AWSSDK.Core" Version="3.3.103.29" />
+    <PackageReference Include="AWSSDK.SecurityToken" Version="3.3.102.14" />
+    <PackageReference Include="AWSSDK.Extensions.CognitoAuthentication" Version="0.9.4" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.5.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="FirebaseDatabase.net" Version="4.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\" />
+    <Folder Include="Model\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="BaseClasses\" />
+    <Folder Include="Classes\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Tools\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Pages\HomeActivity.cs" />
+    <Compile Remove="Pages\PoliticsPage.xaml.cs" />
+    <Compile Remove="ViewModels\PoliticsVM.cs" />
+    <Compile Remove="Pages\SportsPage.xaml.cs" />
+    <Compile Remove="ViewModels\SportsVM.cs" />
+    <Compile Remove="Pages\MainDetails.xaml.cs" />
+    <Compile Remove="Pages\perCategoryPage.xaml.cs" />
+    <Compile Remove="Pages\MoviesPage.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Pages\PoliticsPage.xaml" />
+    <EmbeddedResource Remove="Pages\SportsPage.xaml" />
+    <EmbeddedResource Remove="Pages\MainDetails.xaml" />
+    <EmbeddedResource Remove="Pages\perCategoryPage.xaml" />
+    <EmbeddedResource Remove="Pages\MoviesPage.xaml" />
+  </ItemGroup>
+</Project>
