@@ -1,0 +1,59 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/sreekuttancl/Downloads/Archive/QuizApp.UITests/QuizApp.UITests.csproj": {}
+  },
+  "projects": {
+    "/Users/sreekuttancl/Downloads/Archive/QuizApp.UITests/QuizApp.UITests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sreekuttancl/Downloads/Archive/QuizApp.UITests/QuizApp.UITests.csproj",
+        "projectName": "QuizApp.UITests",
+        "projectPath": "/Users/sreekuttancl/Downloads/Archive/QuizApp.UITests/QuizApp.UITests.csproj",
+        "packagesPath": "/Users/sreekuttancl/.nuget/packages/",
+        "outputPath": "/Users/sreekuttancl/Downloads/Archive/QuizApp.UITests/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/sreekuttancl/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net461"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net461": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {
+          "dependencies": {
+            "NUnit": {
+              "target": "Package",
+              "version": "[2.6.4, )"
+            },
+            "Xamarin.UITest": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
