@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="QuizApp.Pages.AboutUs">
+    <ContentPage.Content>
+        
+        
+        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+                 <Button Text="Back"
+                        TextColor="black"
+                        HorizontalOptions="Start"
+                        FontSize="20"
+                         Clicked="Back"
+                         Margin="0,20,0,0"
+                      />
+                <!--<Button Text="Back"
+                        TextColor="black"
+                        HorizontalOptions="Start"
+                        Padding="50"
+                        FontSize="20"
+                        Clicked="Back_Handle_Clicked"/>-->
+                
+                <Label
+                    Text="About US"
+                    TextDecorations="Underline"
+                    HorizontalTextAlignment="Center"
+                    FontSize="20"
+                   />
+                    
+     
+                 <Label
+                       Text="Welcome to Code Brigade, your number one source for all mobile application development team.We're dedicated to giving you the very best of mobile application(Both native and cross platform), with a focus on cutting edge technology, user experience and 24/7 customer service for their application."
+                    
+                       TextColor="black"
+                       FontSize="20"
+                       Margin="20,20"
+                       FontFamily="Georgia"
+                       HorizontalOptions="Center"
+                       VerticalOptions="CenterAndExpand"/>
+                <Label
+                    Text="Founded in 2019 by six people(Sreekuttan, Arun, Pravesh, Mostafizur, Arjun and Sathish), Code Brigade has come a long way from its beginnings in Barrie, Ontario, Canada. When we first started out, our passion for 'Lead the future' drove us to do tons of research in mobile application and UI/UX so that, Code Brigade can offer you The world's most advanced both native and cross platform mobile application'. We now serve customers all over Canada and are thrilled that we are able to turn our passion into our own website."
+                       TextColor="black"
+                       FontSize="20"
+                       Margin="20,20"
+                       FontFamily="Georgia"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                    />
+                <Label
+                    Text="We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us @www.codebrigade.com."
+                       TextColor="black"
+                       FontSize="20"
+                       Margin="20,20"
+                       FontFamily="Georgia"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                    />
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

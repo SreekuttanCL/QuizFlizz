@@ -84,11 +84,10 @@
   },
   "libraries": {
     "NUnit/2.6.4": {
-      "sha512": "cmSPvaCMRSP0DI19FP1Liw9DyJY3E/vOY1OrVaeJBZpZFWHkmT3fB9ngGWnZX/ftvA7zJEbghEaw3Yd+u4YFAw==",
+      "sha512": "4FEMBTZNUS2BDYvFdBRiy47u8GtFEB+BEG9Uif2fmYfQcFAyDUMGxBybx2/hhnNajjVEvgtJbcQWYXzwvbmWAA==",
       "type": "package",
       "path": "nunit/2.6.4",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "lib/nunit.framework.dll",
         "lib/nunit.framework.xml",
@@ -98,12 +97,10 @@
       ]
     },
     "Xamarin.UITest/2.2.7": {
-      "sha512": "KqyCuJZD1+IL+hUu8gce87pYLK3AFPs3sHeLzxyqf7/q95y1gKXmVbXtZJwt9IgVB1WOSvlqaSKLb9EOsWZnZw==",
+      "sha512": "qlSeDT8ajDMfozooceuIGpnkIO1e/8jMfIX1NmBqnWh5d1fOkMafpeq9HYVxPO6f3VntDlx5/Zar9TBFqeF1lQ==",
       "type": "package",
       "path": "xamarin.uitest/2.2.7",
-      "hasTools": true,
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "ThirdPartyNotices.txt",
         "Xamarin.UITest-License.rtf",
@@ -125,20 +122,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/sreekuttancl/.nuget/packages/": {}
+    "/Users/praveshgiri/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sreekuttancl/Downloads/Archive/QuizApp.UITests/QuizApp.UITests.csproj",
+      "projectUniqueName": "/Users/praveshgiri/Downloads/QuizFlizz-pravesh/QuizApp.UITests/QuizApp.UITests.csproj",
       "projectName": "QuizApp.UITests",
-      "projectPath": "/Users/sreekuttancl/Downloads/Archive/QuizApp.UITests/QuizApp.UITests.csproj",
-      "packagesPath": "/Users/sreekuttancl/.nuget/packages/",
-      "outputPath": "/Users/sreekuttancl/Downloads/Archive/QuizApp.UITests/obj/",
+      "projectPath": "/Users/praveshgiri/Downloads/QuizFlizz-pravesh/QuizApp.UITests/QuizApp.UITests.csproj",
+      "packagesPath": "/Users/praveshgiri/.nuget/packages/",
+      "outputPath": "/Users/praveshgiri/Downloads/QuizFlizz-pravesh/QuizApp.UITests/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/sreekuttancl/.config/NuGet/NuGet.Config"
+        "/Users/praveshgiri/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net461"

@@ -10,7 +10,6 @@ namespace QuizApp.Model
         public override string ToString()
         {
             return name;
-           
         }
     }
 }

@@ -14,17 +14,16 @@
                 <Button Text="Back"
                         TextColor="black"
                         HorizontalOptions="Start"
-                        Padding="50"
+                        Margin="20,35,0,0"
                         FontSize="20"
                         Command="{Binding BackCommand}"/>
                 <Label Text="{Binding QuestionLabel}"
                        TextColor="black"
                        FontSize="25"
-                       Margin="10"
+                       Margin="20,0,20,0" 
                        FontFamily="Georgia"
                        HorizontalOptions="Center"
-                       VerticalOptions="CenterAndExpand"
-                       HorizontalTextAlignment="Center"/>
+                       VerticalOptions="CenterAndExpand"/>
 
                
 

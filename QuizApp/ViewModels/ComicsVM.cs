@@ -10,6 +10,7 @@ using Firebase.Database;
 using Firebase.Database.Query;
 using QuizApp.Model;
 using QuizApp.Pages;
+using QuizApp.Tools;
 using Xamarin.Forms;
 
 namespace QuizApp.ViewModels
@@ -18,13 +19,17 @@ namespace QuizApp.ViewModels
     {
        // public QuestionBank allQuestion;
         bool pickedAnswer, correctAnswer;
+        Double medianScore = 0;
+        string uusername;
         public int questionNumber = 0, score = 0;
         Double perQuestionProgress = .1;
-         
-
+        SessionStore sessionStore;
+        FirebaseHelper firebaseHelper = new FirebaseHelper();
         public string whichCat { get; set; }
         public App myApp = Application.Current as App;
         IList<Questions> QuestionList = new List<Questions>();
+        List<Scores> customList;
+
         public event PropertyChangedEventHandler PropertyChanged;
         FirebaseClient firebase = new FirebaseClient("https://xamarindatabase-ad351.firebaseio.com/");
 
@@ -115,14 +120,20 @@ namespace QuizApp.ViewModels
             SportstoBaseTrue(false);
         }
 
-        public void BackClicked()
+        public async  void BackClicked()
         {
-            myApp.Back();
+            bool answer = await App.Current.MainPage.DisplayAlert("Warning!","Current Progress will be lost. Continue?", "Yes.", "Stay");
+
+            if (answer)
+            {
+                myApp.Back();
+            }
+
         }
 
         //button click event listeners finish
 
-            //Inotify property handler start
+        //Inotify property handler start
         protected virtual void OnPropertyChanged([CallerMemberName]string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs((propertyName)));
@@ -149,7 +160,6 @@ namespace QuizApp.ViewModels
         }
          public void checkAnswer()
         {
-            Debug.Write("question no in check ans func: " + questionNumber);
             correctAnswer = QuestionList[questionNumber].answer;
 
             if (pickedAnswer == correctAnswer)
@@ -177,6 +187,7 @@ namespace QuizApp.ViewModels
                 OnAlertYesNoClicked(null, null);
                 Debug.Write("in else ");
                 CurrentScore = "";
+
             }
         }
         //quiz logic end
@@ -191,6 +202,59 @@ namespace QuizApp.ViewModels
             {
                 //send user to the category screen
                 App.Current.MainPage = new NavigationPage(new CategoryPage());
+                sessionStore = new SessionStore();
+                DateTime now = DateTime.Now.ToLocalTime();
+
+                string currentTime = now.ToString();
+                Debug.Write("Time is:" + currentTime);
+
+                await AddScore(sessionStore.UserName, score, whichCat, currentTime);
+
+                var allScores = await firebaseHelper.GetAllScores();
+                Debug.Write("All scores " + allScores);
+
+                customList = new List<Scores>();
+
+                foreach (var item in allScores)
+                {
+
+                    if (item.Username.Equals(sessionStore.UserName))
+                    {
+                        customList.Add(item);
+                        Debug.Write("Custom list score:" + item.Score);
+
+                    }
+                }
+                medianScore = CalculateMedian(customList);
+
+                var leaderboardScores = await firebaseHelper.GetLeaderboardScores();
+                bool isUserInLeaderboard = true;
+                foreach (var item in leaderboardScores)
+                {
+                    if (item.Username.ToLower().ToString().Equals(sessionStore.UserName.ToLower().ToString()))
+                    {
+                     Debug.Write("inside update");
+                        isUserInLeaderboard = true;
+
+                    }
+                    else
+                    {
+                        isUserInLeaderboard = false;
+                        Debug.Write("inside add");
+                        
+                    }
+                }
+                if (isUserInLeaderboard)
+                {
+                    await firebaseHelper.DeleteLeaderboard(sessionStore.UserName.ToLower().ToString());
+                    await firebaseHelper.AddScoreForLeaderboard(sessionStore.UserName.ToLower().ToString(), medianScore.ToString());
+
+                }
+                else
+                {
+                await firebaseHelper.AddScoreForLeaderboard(sessionStore.UserName.ToLower().ToString(), medianScore.ToString());
+
+                }
             }
             else
             {
@@ -227,6 +291,7 @@ namespace QuizApp.ViewModels
             questionNumber = 0;
             score = 0;
             QuestionList = await GetAllPersons(iCategory);
+            whichCat = iCategory;
             //allQuestion = new QuestionBank();
 
             QuestionLabel = QuestionList[questionNumber].name;
@@ -235,20 +300,25 @@ namespace QuizApp.ViewModels
 
         }
 
-        public async Task AddQuestion(string _name, bool _answer, string _categoryy)
+        public async Task AddScore(string _Username, int _score, string _categoryy, string _date )
         {
             await firebase
-              .Child("Categories")
-              .Child(_categoryy)
-              .PostAsync(new Questions() { name = _name, answer = _answer });
+              .Child("Scores")
+              .PostAsync(new Scores() { Username = _Username, Score = _score, Category=_categoryy, Date = _date });
         }
 
-        public async Task AddScore(string _name, bool _answer, string _categoryy)
+        public double CalculateMedian(List<Scores> list)
         {
-            await firebase
-              .Child("Categories")
-              .Child(_categoryy)
-              .PostAsync(new Questions() { name = _name, answer = _answer });
+
+            foreach (var item in list)
+            {
+                medianScore = medianScore + item.Score;
+            }
+
+            medianScore = medianScore / list.Count;
+            double m = Math.Round(medianScore, 1);
+
+            return m;
         }
 
     }

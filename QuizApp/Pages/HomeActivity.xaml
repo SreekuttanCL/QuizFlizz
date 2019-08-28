@@ -6,21 +6,27 @@
              BackgroundColor="Teal">
         
         <ListView x:Name="list"
+               
                   ItemSelected="OnListViewItemSelected"
-                  RowHeight="75">
-            <ListView.ItemTemplate>
+                  RowHeight="75"
+                 >
+        <ListView.ItemTemplate>
                 <DataTemplate>
                     <!--<ImageCell Text="{Binding name}" ImageSource="{Binding icons}" Detail="{Binding detail}"></ImageCell>-->
                     <ViewCell>
                         <StackLayout Padding="10" Orientation="Horizontal">
 
                             <Image Source="{Binding icons}"/>
-                            <Label Text="{Binding name}" Margin="15,15,0,0" FontAttributes="Bold"/>
-                            
+                        <StackLayout Orientation="Vertical">
+                         <Label Text="{Binding name}" Margin="15,2,0,0" FontAttributes="Bold"/>
+                         <Label Text="{Binding detail}" Margin="15,0,0,0" FontAttributes="Italic" TextColor="Gray"
+                                FontSize="Small"/>
+
+                        </StackLayout>
+                                                    
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
-        
         </ListView>
 </ContentPage>
