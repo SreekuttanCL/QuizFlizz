@@ -160,17 +160,17 @@
     <Folder Include="Assets.xcassets\logo_splash-screen.imageset\" />
   </ItemGroup>
   <ItemGroup>
+    <BundleResource Include="Resources\anatomy.png" />
+    <BundleResource Include="Resources\animals.png" />
     <BundleResource Include="Resources\apple_ex.png" />
     <BundleResource Include="Resources\baseline_movie_black_18dp.png" />
+    <BundleResource Include="Resources\comics.png" />
+    <BundleResource Include="Resources\country.png" />
     <BundleResource Include="Resources\film-director-cinema-movies-clapperboard-512.png" />
+    <BundleResource Include="Resources\history.png" />
     <BundleResource Include="Resources\music.png" />
     <BundleResource Include="Resources\politics.png" />
     <BundleResource Include="Resources\science.png" />
-    <BundleResource Include="Resources\country.png" />
-    <BundleResource Include="Resources\animals.png" />
-    <BundleResource Include="Resources\history.png" />
-    <BundleResource Include="Resources\comics.png" />
-    <BundleResource Include="Resources\anatomy.png" />
     <BundleResource Include="Resources\sports.png" />
   </ItemGroup>
 </Project>

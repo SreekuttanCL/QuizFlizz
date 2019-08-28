@@ -3,7 +3,9 @@ AWSSDK.CognitoIdentityProvider
 AWSSDK.Core
 AWSSDK.Extensions.CognitoAuthentication
 AWSSDK.SecurityToken
+Firebase
 FormsViewGroup
+LiteDB
 Microsoft.IdentityModel.JsonWebTokens
 Microsoft.IdentityModel.Logging
 Microsoft.IdentityModel.Tokens
@@ -13,6 +15,7 @@ PCLStorage.Abstractions
 PCLStorage
 QuizApp
 System.IdentityModel.Tokens.Jwt
+System.Reactive
 System.Runtime
 Validation
 Xamarin.Android.Arch.Core.Common
@@ -40,3 +43,13 @@ Xamarin.Forms.Core
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
+netstandard
+System.Collections
+System.Threading.Tasks
+System.Diagnostics.Debug
+System.Globalization
+System.Text.Encoding
+System.Security.Cryptography.Primitives
+System.Reflection.Extensions
+System.Resources.ResourceManager
+System.Runtime.InteropServices.WindowsRuntime

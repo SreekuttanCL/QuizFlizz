@@ -108,46 +108,17 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\drawable\apple_ex.png" />
     <AndroidResource Include="Resources\drawable\SplashBacground.xml" />
-    <AndroidResource Include="Resources\drawable\film-director-cinema-movies-clapperboard-512.png">
-      <SubType></SubType>
-      <Generator></Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\music.png">
-      <SubType></SubType>
-      <Generator></Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\politics.png">
-      <SubType></SubType>
-      <Generator></Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\science.png">
-      <SubType></SubType>
-      <Generator></Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\country.png">
-      <SubType></SubType>
-      <Generator></Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\animals.png">
-      <SubType></SubType>
-      <Generator></Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\history.png">
-      <SubType></SubType>
-      <Generator></Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\comics.png">
-      <SubType></SubType>
-      <Generator></Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\anatomy.png">
-      <SubType></SubType>
-      <Generator></Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\drawable\sports.png">
-      <SubType></SubType>
-      <Generator></Generator>
-    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\anatomy.png" />
+    <AndroidResource Include="Resources\drawable\animals.png" />
+    <AndroidResource Include="Resources\drawable\baseline_movie_black_18dp.png" />
+    <AndroidResource Include="Resources\drawable\comics.png" />
+    <AndroidResource Include="Resources\drawable\country.png" />
+    <AndroidResource Include="Resources\drawable\film-director-cinema-movies-clapperboard-512.png" />
+    <AndroidResource Include="Resources\drawable\history.png" />
+    <AndroidResource Include="Resources\drawable\music.png" />
+    <AndroidResource Include="Resources\drawable\politics.png" />
+    <AndroidResource Include="Resources\drawable\science.png" />
+    <AndroidResource Include="Resources\drawable\sports.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

@@ -49,7 +49,7 @@ namespace QuizApp.ViewModels
 
             if (!StringOperations.ValidatePasswordInput(Password))
             {
-                await MainApp.MainPage.DisplayAlert("Error!", "Password policy mismatch", "ok");
+                await MainApp.MainPage.DisplayAlert("Error!", "Password must be 8 characters long with a number, uppercase, lowercase, and a special character", "ok");
                 return;
             }
 

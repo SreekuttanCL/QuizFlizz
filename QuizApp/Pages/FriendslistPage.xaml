@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="QuizApp.Pages.FriendslistPage">
+    <StackLayout>  
+        <StackLayout>  
+            
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+                 <Button Text="Back"
+                        TextColor="black"
+                        HorizontalOptions="Start"
+                        FontSize="20"
+                         Clicked="Back"
+                         Margin="0,20,0,0"
+                      />
+                <Label Margin="0,0,0,0" Text="Your Friends" FontAttributes="Bold" FontSize="Large" TextColor="Gray" HorizontalTextAlignment="Center" ></Label>  
+                <Entry x:Name="txtId" Placeholder="ID"></Entry>  
+                <Entry x:Name="txtName" Placeholder="Enter Name"></Entry>  
+                <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">  
+                    <Button x:Name="btnAdd" WidthRequest="150" Text="Add" Clicked="BtnAdd_Clicked"/>  
+                    <Button x:Name="btnRetrive" WidthRequest="150" Text="Retrive" Clicked="BtnRetrive_Clicked"/>  
+                </StackLayout>  
+                <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">  
+                    <Button x:Name="btnUpdate" WidthRequest="150" Text="Update" Clicked="BtnUpdate_Clicked" />  
+                    <Button x:Name="btnDelete" WidthRequest="150" Text="Delete" Clicked="BtnDelete_Clicked" />  
+                </StackLayout>  
+                
+                <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal" BackgroundColor="Navy">  
+                    <Button x:Name="BtnMyFriends" WidthRequest="150" Text="My Friends" TextColor="White" Clicked="BtnMyFriends_Clicked" />  
+                    <Button x:Name="BtnAll" WidthRequest="150" Text="All" Clicked="BtnAll_Clicked" TextColor="White" />  
+                </StackLayout>  
+                  
+                <ListView x:Name="lstPersons"
+                          ItemSelected = "OnListViewItemSelected">  
+                    <ListView.ItemTemplate>  
+                        <DataTemplate>  
+                            <TextCell Text="{Binding Name}"></TextCell>  
+                        </DataTemplate>  
+                    </ListView.ItemTemplate>  
+                </ListView>  
+            </StackLayout>  
+        </StackLayout>  
+    </StackLayout>
+</ContentPage>

@@ -1678,12 +1678,10 @@
   },
   "libraries": {
     "AWSSDK.CognitoIdentity/3.3.2.14": {
-      "sha512": "f4/zDJpRJTKYaIvUzLpXKNy+g/DI3Tn1cw/JFjUkpicSUfsdtccto0bSEZRlaFpDa/uLlfJ/BVaA3AnIIUN3oA==",
+      "sha512": "gTvxgzx7GXHA5yufcekuMODqOg02R2XzQjOQmCAQuR7mAfwieThDYSI+PN/YLtzxjKRcF72e1D6V7hxescBtUA==",
       "type": "package",
       "path": "awssdk.cognitoidentity/3.3.2.14",
-      "hasTools": true,
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/AWSSDK.CognitoIdentity.CodeAnalysis.dll",
         "awssdk.cognitoidentity.3.3.2.14.nupkg.sha512",
@@ -1712,12 +1710,10 @@
       ]
     },
     "AWSSDK.CognitoIdentityProvider/3.3.102.50": {
-      "sha512": "/W+9nvXYV3lTp+M4wshQ4UHPyI0SWDxa2say/3ODPCZ6/O0G5Zoqu7315mZaNu8d0idJW+rgvxyQCB7arWHPPg==",
+      "sha512": "GsMzKi1qwhPH7k16SEh7Gsr4A5nb6XdI+Pck3f30dOYYsjWLd5q9E2lBpVBNtWTgAjdH0/pKhDyc5DS4RvJwmw==",
       "type": "package",
       "path": "awssdk.cognitoidentityprovider/3.3.102.50",
-      "hasTools": true,
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/AWSSDK.CognitoIdentityProvider.CodeAnalysis.dll",
         "awssdk.cognitoidentityprovider.3.3.102.50.nupkg.sha512",
@@ -1752,12 +1748,10 @@
       ]
     },
     "AWSSDK.Core/3.3.103.29": {
-      "sha512": "jj3y2PG/hEsR4iLRgfciQPm/ykj64RxTKSrlW86ef/0G2UB1qALYH53wCZlsfrpGq4GwDRxkYNQQkxO/Di8kDA==",
+      "sha512": "2rvyBaL2QyqVmNWGRpJWQYNG+vtv0bHq1XtVdKzm/bUuq6Aa4eTVvuIHLcT12GNx4ZA/lPNrmN0kd3joAZIGOA==",
       "type": "package",
       "path": "awssdk.core/3.3.103.29",
-      "hasTools": true,
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "awssdk.core.3.3.103.29.nupkg.sha512",
         "awssdk.core.nuspec",
@@ -1801,11 +1795,10 @@
       ]
     },
     "AWSSDK.Extensions.CognitoAuthentication/0.9.4": {
-      "sha512": "1y/UQSxlVG9XakvRv2SsvQRxIH14+cpnVmWO6UGC3pRBbxeGFjb39IPrxgi9ogxmgI2nw7WZIfxf9/9cXJQBUA==",
+      "sha512": "UGDsXTF02q0gLXxeIQ4wKWRHvQUClJgP+l/OnX4uUIPFB1p9OxBitk+Kc0dYVB/aR/rBivt+2FjV+HcAfYELng==",
       "type": "package",
       "path": "awssdk.extensions.cognitoauthentication/0.9.4",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "awssdk.extensions.cognitoauthentication.0.9.4.nupkg.sha512",
         "awssdk.extensions.cognitoauthentication.nuspec",
@@ -1816,12 +1809,10 @@
       ]
     },
     "AWSSDK.SecurityToken/3.3.102.14": {
-      "sha512": "6Ru1XTrmztvoSwaey59YrrPfWeldRWdN/3y/DRX03876z4FIowLNtjOyQgOHBQZOKFe2fqH99dvZAfUibR9qEQ==",
+      "sha512": "udPcBFYloZO6/RtHYKjARV8xeiPV9WrPDD9yplOcQFw4oir93Yk7rvfpRqcA0SuKcwqpzt3SjiW4aA4N1Qobkg==",
       "type": "package",
       "path": "awssdk.securitytoken/3.3.102.14",
-      "hasTools": true,
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/AWSSDK.SecurityToken.CodeAnalysis.dll",
         "awssdk.securitytoken.3.3.102.14.nupkg.sha512",
@@ -1856,11 +1847,10 @@
       ]
     },
     "FirebaseDatabase.net/4.0.1": {
-      "sha512": "95OLitflIPShlaogpJPeznsJ8zX7LqXe4vnOYD4FlwJGPnQ5jrN0vHaBbF6sHoSv77/miX5Pn8cN/CzyiTMemg==",
+      "sha512": "8EJM/cuhR/6DyLezZeKegxVoaGJKPSPDeTZRgcIa7AqC00l3Qki4135BkutY647znymc2i6A5O3FaJ+P4o23TA==",
       "type": "package",
       "path": "firebasedatabase.net/4.0.1",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "firebasedatabase.net.4.0.1.nupkg.sha512",
         "firebasedatabase.net.nuspec",
@@ -1868,11 +1858,10 @@
       ]
     },
     "LiteDB/4.1.4": {
-      "sha512": "g4g9JlHzRBZl+Gd2UbiRdszZ7t8wozU2wX7+5xY5uE79tmcgcDhha+ubAP84G1VLbwQmhBGCzRfIx+epLmJciQ==",
+      "sha512": "shMO1SvnNOvdhbfkCNaghpJDx+5Jeyj824Un6L5hoMR1kT5XechV5RR3t1XnCy4VdMQ6rHewyWFSYzkMADhebA==",
       "type": "package",
       "path": "litedb/4.1.4",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net35/LiteDB.dll",
         "lib/net35/LiteDB.xml",
@@ -1887,11 +1876,10 @@
       ]
     },
     "Microsoft.IdentityModel.JsonWebTokens/5.5.0": {
-      "sha512": "cT9SCW/dN+ulrvAtbh37c36DR6aArENH3S4UtFmvXRx+VGC0ArDgzRaEbEh+ChS4koxdl2oS691250iZhgKvwg==",
+      "sha512": "KGolSaf7JnBpAiXB3Ly7z5QNxG8HelKLWYthYayjdYbSFGBs08RTXXwZftrvZfhFozXjIyb4X/599r8UoQ7BVg==",
       "type": "package",
       "path": "microsoft.identitymodel.jsonwebtokens/5.5.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/Microsoft.IdentityModel.JsonWebTokens.dll",
         "lib/net45/Microsoft.IdentityModel.JsonWebTokens.xml",
@@ -1908,11 +1896,10 @@
       ]
     },
     "Microsoft.IdentityModel.Logging/5.5.0": {
-      "sha512": "1w/Hz/7+al+ugQn+6y0tAPmpN8U0u1aBtl1QXYCVkiJfbCC4tgyroFOuhdztOq48rgeM+3JW9bGqOtkfVurW8w==",
+      "sha512": "0dkS2v216kNockvZPtCEJ5iMwuDo7IyO6xedntjanTTBu87H53nh5NU3jlxkWhwtEABH0yATz1yMgu1QBFGg0Q==",
       "type": "package",
       "path": "microsoft.identitymodel.logging/5.5.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/Microsoft.IdentityModel.Logging.dll",
         "lib/net45/Microsoft.IdentityModel.Logging.xml",
@@ -1929,11 +1916,10 @@
       ]
     },
     "Microsoft.IdentityModel.Tokens/5.5.0": {
-      "sha512": "cu1klZiuCwVYbXHs0QdnseuoRGG1/85VX9d1Sk0vbJlKp+HJUN/4pAS/fe2m9bTOYyIPdeCHeksMiVHgo1EfAA==",
+      "sha512": "QIOkpxDKZhts/5cE+h03OZzA5XiI8xfclJ0fRSxxGCoIy9Xh6Z/VfDYhyDjrq2L5hLuMFP9txKSTzsHANYFZNw==",
       "type": "package",
       "path": "microsoft.identitymodel.tokens/5.5.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/Microsoft.IdentityModel.Tokens.dll",
         "lib/net45/Microsoft.IdentityModel.Tokens.xml",
@@ -1950,11 +1936,10 @@
       ]
     },
     "Newtonsoft.Json/12.0.2": {
-      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "sha512": "mtweBXPWhp1CMQATtBT7ZfMZrbZBTKfjGwz6Y75NwGjx/GztDaUnfw8GK9KZ2T4fDIqKJyDjc9Rxlw5+G2FcVA==",
       "type": "package",
       "path": "newtonsoft.json/12.0.2",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
         "lib/net20/Newtonsoft.Json.dll",
@@ -1980,11 +1965,10 @@
       ]
     },
     "PCLCrypto/1.0.2.15130": {
-      "sha512": "FbqU/mbtemApQTSLHTlLHmzR55oB9O8FJ6cEiQdJr2PMpzGM6k4yroHpJKBcl+bZ6SplTClK3SS6xxlskyLgHg==",
+      "sha512": "jLppiJ3cGciK6xSnVbNWXW2nVgn2CJ7v2bjl1RMWevoJsYyqgYoW6civl8Qtj0nuYg2UVHDQqrGudCxtcWB8Ow==",
       "type": "package",
       "path": "pclcrypto/1.0.2.15130",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "lib/Xamarin.iOS/PCLCrypto.dll",
         "lib/Xamarin.iOS/PCLCrypto.xml",
@@ -2011,11 +1995,10 @@
       ]
     },
     "PCLStorage/1.0.2": {
-      "sha512": "9If+1ZFCk3QaT/asfiL+J9FMnx2CTMrLCU8tDMUOI/aCGWGWl9vJ1/KcMkjf92op23ZknenvYJZBLDAqE3sFlg==",
+      "sha512": "gj37kg2DqlKADjnoax9wqSLSo9ZeEBRTEqfXg3R+fm2sbgst2B0Xa6TX1sh2ORrj83vk8lzyZ/DGEQx7c2QKPg==",
       "type": "package",
       "path": "pclstorage/1.0.2",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "lib/monoandroid/PCLStorage.Abstractions.dll",
         "lib/monoandroid/PCLStorage.Abstractions.xml",
@@ -2058,11 +2041,10 @@
       ]
     },
     "System.Collections.NonGeneric/4.0.1": {
-      "sha512": "hMxFT2RhhlffyCdKLDXjx8WEC5JfCvNozAZxCablAuFRH74SCV4AgzE8yJCh/73bFnEoZgJ9MJmkjQ0dJmnKqA==",
+      "sha512": "XDijxhtvTsIFqXB3PbkPztkxnN4ro7kodqLQSg6mOpfWewiJcufYIV0VgO/fG9f79cic6rFfrxuCEtcru8Vz8g==",
       "type": "package",
       "path": "system.collections.nongeneric/4.0.1",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -2097,11 +2079,10 @@
       ]
     },
     "System.IdentityModel.Tokens.Jwt/5.5.0": {
-      "sha512": "xa8kptJ+uf9hzj366f3pLcs5HFZ6dQMDKzEGq/yZNF0s3mVfyIhuQwgDcTJlAU4AROne/6Z5+vITwrW3gVNKIA==",
+      "sha512": "0qmIRXlIUe3f+WFV3O0FtlG6iappg7lz72P7FulaS1XGtkmsseD6zKJEwMb7esTcm4cSEwGpvuo+wPb10yucWw==",
       "type": "package",
       "path": "system.identitymodel.tokens.jwt/5.5.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/System.IdentityModel.Tokens.Jwt.dll",
         "lib/net45/System.IdentityModel.Tokens.Jwt.xml",
@@ -2118,11 +2099,10 @@
       ]
     },
     "System.Numerics.Vectors/4.5.0": {
-      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "sha512": "nATsBTD2CKr4AYN6eRszhX4sptImWmBJwB/U6XKCWWfnCcrTBw8XSCm3QA9gjppkHTr8OkXUY21MR91D3QZXsw==",
       "type": "package",
       "path": "system.numerics.vectors/4.5.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -2165,11 +2145,10 @@
       ]
     },
     "System.Reactive/4.0.0": {
-      "sha512": "yaVAxT2Yl28p9+DupGwj2oPbIOYZUQimOQ+n7N7vML2oofIRj9BmcfD7DHc6FLrNah65EigOgG6U9VnwWEyz5g==",
+      "sha512": "l7AZOWqr++qiIppQxNvUsy24u73Qm81vIv6buMSv+KSesatxoi5mVBmgkYjFMhGAfz2C7fh+QdlskKOAVvrL0A==",
       "type": "package",
       "path": "system.reactive/4.0.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net46/System.Reactive.dll",
         "lib/net46/System.Reactive.xml",
@@ -2186,11 +2165,10 @@
       ]
     },
     "System.Reflection/4.3.0": {
-      "sha512": "KMiAFoW7MfJGa9nDFNcfu+FpEdiHpWgTcS2HdMpDvt9saK3y/G4GwprPyzqjFH9NTaGPQeWNHU+iDlDILj96aQ==",
+      "sha512": "IyW2ftYNzgMCgHBk8lQiy+G3+ydbU5tE+6PEqM5JJvIdeFKaXDSzHAPYDREPe6zpr5WJ1Fcma+rAFCIAV6+DMw==",
       "type": "package",
       "path": "system.reflection/4.3.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -2267,11 +2245,10 @@
       ]
     },
     "System.Reflection.TypeExtensions/4.3.0": {
-      "sha512": "7u6ulLcZbyxB5Gq0nMkQttcdBTx57ibzw+4IOXEfR+sXYQoHvjW5LTLyNr8O22UIMrqYbchJQJnos4eooYzYJA==",
+      "sha512": "aK6BpjW5ryrun8j8j+faA1bvTaTrMvgaift1YTuWcU6PGh9MEr0NM177sDQIzHp0QxSDfxNWTV+yYsonIFVnfw==",
       "type": "package",
       "path": "system.reflection.typeextensions/4.3.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -2321,11 +2298,10 @@
       ]
     },
     "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
-      "sha512": "J4GUi3xZQLUBasNwZnjrffN8i5wpHrBtZoLG+OhRyGo/+YunMRWWtwoMDlUAIdmX0uRfpHIBDSV6zyr3yf00TA==",
+      "sha512": "BB4Y4G5QH6jPlnI4l8gpD0QxbaUFUUz5478TB2fxLB4pgZbJSKDLQfDaReCbopPPJB5LkwskLo86mXBq2KzpHg==",
       "type": "package",
       "path": "system.runtime.interopservices.windowsruntime/4.3.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -2382,11 +2358,10 @@
       ]
     },
     "System.Security.Cryptography.Cng/4.5.0": {
-      "sha512": "WG3r7EyjUe9CMPFSs6bty5doUqT+q9pbI80hlNzo2SkPkZ4VTuZkGWjpp77JB8+uaL4DFPRdBsAY+DX3dBK92A==",
+      "sha512": "DsHSZoBeVe2bAknPwdrgnCQlgd80XRcS8V3ev952BF8ZE4jUi2i7+tIaFth6md9nure1SJL2hfQt4IgjpNybxQ==",
       "type": "package",
       "path": "system.security.cryptography.cng/4.5.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -2445,11 +2420,10 @@
       ]
     },
     "Validation/2.0.6.15003": {
-      "sha512": "8vgCOG9mPeOd3xwyL20OT9RyOKq9PmJb0Iltzwj6eay38Cq2v6ojvpSDbc+sc6YXit+iAVyyvHTS29rBvDpdDQ==",
+      "sha512": "hCFOgPz+RaixAw1LRKUJH++zYBBTqicQpOVsccHRSfGP7WA6BlLXoEIzkfZSxv7+DlIJZ+oM+T2vT6DKEX0zUQ==",
       "type": "package",
       "path": "validation/2.0.6.15003",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll",
         "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.xml",
@@ -2458,11 +2432,10 @@
       ]
     },
     "Xamarin.Essentials/1.0.1": {
-      "sha512": "cGSje2LlYsCdscPt2zAG4e0Zzr08zc21Cj4DAMub3GR37lc/vzAVwGxco8NeCSzcZs147wYbXkFCXwOr4LUO9A==",
+      "sha512": "TUsMSXqdLEZlx0O3EcWMwOF5e8X3Gh0GX28FlH3q8iyKAQBYd8tV+Ja7tHMplf7D8V4NVCG9ELqx2nk/jPWPew==",
       "type": "package",
       "path": "xamarin.essentials/1.0.1",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "lib/monoandroid71/Xamarin.Essentials.dll",
         "lib/monoandroid71/Xamarin.Essentials.pdb",
@@ -2493,11 +2466,10 @@
       ]
     },
     "Xamarin.Forms/3.6.0.264807": {
-      "sha512": "PbnXpStyxNYJzPrXXMW17F4YeMsFAs6YT9LL2vxObDWCGtaKkLia4UyBPF3Qbhy+lQPeap/ijV1Rlvasp4DFiA==",
+      "sha512": "T7gYS3PoGNtp6D7GAX7fF4QzR7NC36NNQSiuEb5TXO8rEqkZGwpC4u/6S62rH0wL3dabWNVpJPPnL5jZvWeoVg==",
       "type": "package",
       "path": "xamarin.forms/3.6.0.264807",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "build/MonoAndroid10/proguard.cfg",
         "build/Xamarin.Forms.DefaultItems.props",
@@ -2658,11 +2630,10 @@
       ]
     },
     "Xamarin.TestCloud.Agent/0.21.8": {
-      "sha512": "SUpK4HIxwISIzz7q8IfCnXAcKxHuZhhc9wm/3wPOi5+Jwj2dCvfd8C5IJpB7UK0orCerWK0n+DRjkv9h6dcyaw==",
+      "sha512": "gm8KoxzKtF/L45vHpbmitiWuG9CnQPsSlrJRK6fN2NGZxPWQ+i3GdbU/QlXVc2/jkF6NYcwIfVkcsHANcW2nFA==",
       "type": "package",
       "path": "xamarin.testcloud.agent/0.21.8",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "epl-v10.html",
@@ -2692,20 +2663,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/sreekuttancl/.nuget/packages/": {}
+    "/Users/praveshgiri/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sreekuttancl/Downloads/Archive/QuizApp.iOS/QuizApp.iOS.csproj",
+      "projectUniqueName": "/Users/praveshgiri/Downloads/QuizFlizz-pravesh/QuizApp.iOS/QuizApp.iOS.csproj",
       "projectName": "QuizApp.iOS",
-      "projectPath": "/Users/sreekuttancl/Downloads/Archive/QuizApp.iOS/QuizApp.iOS.csproj",
-      "packagesPath": "/Users/sreekuttancl/.nuget/packages/",
-      "outputPath": "/Users/sreekuttancl/Downloads/Archive/QuizApp.iOS/obj/",
+      "projectPath": "/Users/praveshgiri/Downloads/QuizFlizz-pravesh/QuizApp.iOS/QuizApp.iOS.csproj",
+      "packagesPath": "/Users/praveshgiri/.nuget/packages/",
+      "outputPath": "/Users/praveshgiri/Downloads/QuizFlizz-pravesh/QuizApp.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/sreekuttancl/.config/NuGet/NuGet.Config"
+        "/Users/praveshgiri/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
@@ -2716,8 +2687,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/sreekuttancl/Downloads/Archive/QuizApp/QuizApp.csproj": {
-              "projectPath": "/Users/sreekuttancl/Downloads/Archive/QuizApp/QuizApp.csproj"
+            "/Users/praveshgiri/Downloads/QuizFlizz-pravesh/QuizApp/QuizApp.csproj": {
+              "projectPath": "/Users/praveshgiri/Downloads/QuizFlizz-pravesh/QuizApp/QuizApp.csproj"
             }
           }
         }

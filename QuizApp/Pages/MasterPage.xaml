@@ -17,21 +17,63 @@
                        TextColor="black"
                        />
             </StackLayout>
-            <Grid Grid.Row="1" BackgroundColor="#FFF9C4" >
+            <Grid Grid.Row="1" BackgroundColor="#FFF9C4">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="0.1*"/>
                     <RowDefinition Height="0.1*"/>
-                    <RowDefinition Height="0.9*"/>
+                    <RowDefinition Height="0.1*"/>
+                     <RowDefinition Height="0.1*"/>
+                     <RowDefinition Height="0.1*"/>
+                    <RowDefinition Height="0.8*"/>
+                    <RowDefinition Height="0.1*"/>
+
                 </Grid.RowDefinitions>
+               
                 <Button Grid.Row="0" 
-                        Text="Category"
+                        Text="My Scores"
                         FontSize="Large"
                         TextColor="black"
                         FontFamily="badoni"
                         FontAttributes="Bold"
-                        Clicked="Category_Handle_Clicked"/>
-                <Button Grid.Row="1" 
-                        Text="LogOut"
+                        Clicked="Scores_Handle_Clicked"/>
+                 <Button Grid.Row="1" 
+                        Text="Leaderboard"
+                        FontSize="Large"
+                        TextColor="black"
+                        FontFamily="badoni"
+                        FontAttributes="Bold"
+                        Clicked="Leaderboard_Handle_Clicked"/>
+                <Button Grid.Row="2" 
+                        Text="Friends"
+                        FontSize="Large"
+                        TextColor="black"
+                        FontFamily="badoni"
+                        FontAttributes="Bold"
+                        Clicked="friendlist_Handle_Clicked"/>
+                
+                <Button Grid.Row="3" 
+                        Text="About us"
+                        FontSize="Large"
+                        TextColor="black"
+                        FontFamily="badoni"
+                        FontAttributes="Bold"
+                        Clicked="aboutUs_Handle_Clicked"/>
+                <Button Grid.Row="4" 
+                        Text="Help and Support"
+                        FontSize="Large"
+                        TextColor="black"
+                        FontFamily="badoni"
+                        FontAttributes="Bold"
+                        Clicked="aboutUs_Handle_Clicked"/>
+                <Button Grid.Row="5" 
+                        Text=""
+                        FontSize="Large"
+                        TextColor="black"
+                        FontFamily="badoni"
+                        FontAttributes="Bold"
+                      />
+                <Button Grid.Row="6" 
+                        Text="Log out"
                         FontSize="Large"
                         TextColor="black"
                         FontFamily="badoni"

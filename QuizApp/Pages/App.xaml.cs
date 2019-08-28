@@ -101,6 +101,30 @@ namespace QuizApp
 
         }
 
+        public void toFriendlistPage()
+        {
+            MainPage = new FriendslistPage();
+        }
+
+        public void toAboutUs()
+        {
+            //App.Current.MainPage.Navigation.PushAsync(new AboutUs());
+
+            MainPage = new AboutUs();
+        }
+        public void toMyScores()
+        {
+            //App.Current.MainPage.Navigation.PushAsync(new AboutUs());
+
+             MainPage = new MyScore();
+        }
+
+        public void toLeaderboard()
+        {
+            //App.Current.MainPage.Navigation.PushAsync(new AboutUs());
+
+            MainPage = new Leaderboard();
+        }
         public void Back()
         {
             MainPage = new CategoryPage();
