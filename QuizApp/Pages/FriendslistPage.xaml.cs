@@ -35,61 +35,76 @@ namespace QuizApp.Pages
         private async void BtnAdd_Clicked(object sender, EventArgs e)
         {
 
-              if(e1 == null)
+            if (checkEmpty(txtId.Text) || checkEmpty(txtName.Text))
             {
-                if (txtId.Text.Equals(null) || txtName.Text.Equals(null))
+                await DisplayAlert("Alert!", "Entry fields can not be emopy", "OK");
+            }
+            else
+            {
+                await firebaseHelper.AddPerson(Convert.ToInt32(txtId.Text), txtName.Text, sessionStore.UserName);
+                txtId.Text = string.Empty;
+                txtName.Text = string.Empty;
+                await DisplayAlert("Success", "Person Added Successfully", "OK");
+                initializeListView();
+            }
+        }
+       
+        private async void BtnRetrive_Clicked(object sender, EventArgs e)
+        {
+
+            if (checkEmpty(txtId.Text) )
+            {
+                await DisplayAlert("Alert!", "Entry fields can not be emopy", "OK");
+            }
+            else
+            {
+                var person = await firebaseHelper.GetPerson(Convert.ToInt32(txtId.Text));
+                if (person != null)
                 {
-                    await DisplayAlert("can not be null", "no null please", "OK");
+                    txtId.Text = person.UserId.ToString();
+                    txtName.Text = person.Name;
+                    await DisplayAlert("Success", "Person Retrive Successfully", "OK");
 
                 }
                 else
                 {
-                    await firebaseHelper.AddPerson(Convert.ToInt32(txtId.Text), txtName.Text, sessionStore.UserName);
-                    txtId.Text = string.Empty;
-                    txtName.Text = string.Empty;
-                    await DisplayAlert("Success", "Person Added Successfully", "OK");
-                    initializeListView();
+                    await DisplayAlert("Success", "No Person Available", "OK");
                 }
             }
 
-           
-
-        }
-        void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-            e1 = e;
-        }
-        private async void BtnRetrive_Clicked(object sender, EventArgs e)
-        {
-            var person = await firebaseHelper.GetPerson(Convert.ToInt32(txtId.Text));
-            if (person != null)
-            {
-                txtId.Text = person.UserId.ToString();
-                txtName.Text = person.Name;
-                await DisplayAlert("Success", "Person Retrive Successfully", "OK");
-
-            }
-            else
-            {
-                await DisplayAlert("Success", "No Person Available", "OK");
-            }
 
         }
 
         private async void BtnUpdate_Clicked(object sender, EventArgs e)
         {
-            await firebaseHelper.UpdatePerson(Convert.ToInt32(txtId.Text), txtName.Text, username);
-            txtId.Text = string.Empty;
-            txtName.Text = string.Empty;
-            await DisplayAlert("Success", "Person Updated Successfully", "OK");
-            initializeListView();
+            if (checkEmpty(txtId.Text) || checkEmpty(txtName.Text))
+            {
+                await DisplayAlert("Alert!", "Entry fields can not be emopy", "OK");
+            }
+            else
+            {
+                await firebaseHelper.UpdatePerson(Convert.ToInt32(txtId.Text), txtName.Text, username);
+                txtId.Text = string.Empty;
+                txtName.Text = string.Empty;
+                await DisplayAlert("Success", "Person Updated Successfully", "OK");
+                initializeListView();
+            }
+
         }
 
         private async void BtnDelete_Clicked(object sender, EventArgs e)
         {
-            await firebaseHelper.DeletePerson(Convert.ToInt32(txtId.Text));
-            await DisplayAlert("Success", "Person Deleted Successfully", "OK");
-            initializeListView();
+            if (checkEmpty(txtId.Text) || checkEmpty(txtName.Text))
+            {
+                await DisplayAlert("Alert!", "Entry fields can not be emopy", "OK");
+            }
+            else
+            {
+                await firebaseHelper.DeletePerson(Convert.ToInt32(txtId.Text));
+                await DisplayAlert("Success", "Person Deleted Successfully", "OK");
+                initializeListView();
+            }
+
         }
 
         private async void BtnMyFriends_Clicked(object sender, EventArgs e)
@@ -135,9 +150,11 @@ namespace QuizApp.Pages
                 bool where = await App.Current.MainPage.DisplayAlert("Alert!", "You have not added any friends.", "Add now", "Add later");
                 if (where)
                 {
+                    lstPersons.ItemsSource = modifiedList;
                 }
                 else
                 {
+
                     myApp.OnLogin();
 
                 }
@@ -145,6 +162,18 @@ namespace QuizApp.Pages
             else
             {
                 lstPersons.ItemsSource = modifiedList;
+            }
+        }
+
+        public  bool checkEmpty(string field)
+        {
+            if (string.IsNullOrWhiteSpace(txtId.Text))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }

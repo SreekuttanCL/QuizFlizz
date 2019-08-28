@@ -5,12 +5,20 @@
         
         <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
             <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+                 <Button Text="Back"
+                        TextColor="black"
+                        HorizontalOptions="Start"
+                        FontSize="20"
+                         Clicked="Back"
+                         Margin="0,20,0,0"
+                      />
                 <!--<Button Text="Back"
                         TextColor="black"
                         HorizontalOptions="Start"
                         Padding="50"
                         FontSize="20"
                         Clicked="Back_Handle_Clicked"/>-->
+                
                 <Label
                     Text="About US"
                     TextDecorations="Underline"

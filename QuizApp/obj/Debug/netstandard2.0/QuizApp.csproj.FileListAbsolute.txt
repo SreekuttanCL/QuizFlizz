@@ -30,7 +30,6 @@
 /Users/praveshgiri/Downloads/QuizFlizz-pravesh/QuizApp/obj/Debug/netstandard2.0/Pages/MainPage.xaml.g.cs
 /Users/praveshgiri/Downloads/QuizFlizz-pravesh/QuizApp/obj/Debug/netstandard2.0/Pages/MasterPage.xaml.g.cs
 /Users/praveshgiri/Downloads/QuizFlizz-pravesh/QuizApp/obj/Debug/netstandard2.0/Pages/MyScore.xaml.g.cs
-/Users/praveshgiri/Downloads/QuizFlizz-pravesh/QuizApp/obj/Debug/netstandard2.0/Pages/MyScores.xaml.g.cs
 /Users/praveshgiri/Downloads/QuizFlizz-pravesh/QuizApp/obj/Debug/netstandard2.0/Pages/SignUp.xaml.g.cs
 /Users/praveshgiri/Downloads/QuizFlizz-pravesh/QuizApp/obj/Debug/netstandard2.0/QuizApp.csproj.CoreCompileInputs.cache
 /Users/praveshgiri/Downloads/QuizFlizz-pravesh/QuizApp/obj/Debug/netstandard2.0/QuizApp.AssemblyInfoInputs.cache
@@ -38,3 +37,4 @@
 /Users/praveshgiri/Downloads/QuizFlizz-pravesh/QuizApp/obj/Debug/netstandard2.0/XamlC.stamp
 /Users/praveshgiri/Downloads/QuizFlizz-pravesh/QuizApp/obj/Debug/netstandard2.0/QuizApp.dll
 /Users/praveshgiri/Downloads/QuizFlizz-pravesh/QuizApp/obj/Debug/netstandard2.0/QuizApp.pdb
+/Users/praveshgiri/Downloads/QuizFlizz-pravesh/QuizApp/obj/Debug/netstandard2.0/Pages/HelpAndSupport.xaml.g.cs

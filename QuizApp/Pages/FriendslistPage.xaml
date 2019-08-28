@@ -28,11 +28,25 @@
                     <Button x:Name="BtnAll" WidthRequest="150" Text="All" Clicked="BtnAll_Clicked" TextColor="White" />  
                 </StackLayout>  
                   
-                <ListView x:Name="lstPersons"
-                          ItemSelected = "OnListViewItemSelected">  
+                <ListView x:Name="lstPersons">  
                     <ListView.ItemTemplate>  
                         <DataTemplate>  
-                            <TextCell Text="{Binding Name}"></TextCell>  
+                           <ViewCell>
+                        <StackLayout  Orientation="Horizontal">
+                          
+                        <StackLayout Margin="0,0,5,0" Orientation="Horizontal" HorizontalOptions="Center">
+                        <Label Text = "Name: " WidthRequest="110" VerticalTextAlignment="Center"/>
+                        <Label Text = "{Binding Name}" FontAttributes="Bold" WidthRequest="200" VerticalTextAlignment="Center"/>                                           
+                        </StackLayout>
+                                        
+                        <StackLayout Margin="0,0,5,0" Orientation="Horizontal" >
+                        <Label Text = "User ID: " WidthRequest="70" VerticalTextAlignment="Center"/>
+                        <Label Text = "{Binding UserId}" WidthRequest="45" FontAttributes="Bold" VerticalTextAlignment="Center"/>
+                                            
+                        </StackLayout>
+                            
+                        </StackLayout>
+                    </ViewCell> 
                         </DataTemplate>  
                     </ListView.ItemTemplate>  
                 </ListView>  

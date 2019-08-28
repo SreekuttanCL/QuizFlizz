@@ -58,9 +58,6 @@ namespace QuizApp.Pages
                 m = Math.Round(medianScore, 2);
             }
 
-
-           
-
             return m;
         }
 
@@ -84,7 +81,6 @@ namespace QuizApp.Pages
 
                 }
             }
-            //var asc = customList.OrderBy(item => item.Score);
 
             if (customList.Count == 0)
             {
@@ -109,27 +105,6 @@ namespace QuizApp.Pages
 
             }
 
-            //var leaderboardScores = await firebaseHelper.GetLeaderboardScores();
-            //foreach(var item in leaderboardScores)
-            //{
-            //    if (item.Username.ToLower().ToString().Equals(sessionStore.UserName.ToLower().ToString()))
-            //    {
-            //        Debug.Write("inside update");
-            //        await firebaseHelper.UpdateLeaderboard(username, medianScore.ToString());
-
-            //    }
-            //    else
-            //    {
-            //        Debug.Write("inside add");
-
-
-
-            //        await firebaseHelper.AddScoreForLeaderboard(username, medianScore.ToString());
-
-
-
-            //    }
-            //}
 
 
 
